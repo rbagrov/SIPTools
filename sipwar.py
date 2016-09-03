@@ -383,9 +383,7 @@ class TakeASip:
                         or buff.startswith(self.RINGING) \
                         or buff.startswith(self.UNAVAILABLE):
                     gotbadresponse = True
-                elif (buff.startswith(self.PROXYAUTHREQ)
-                      or buff.startswith(self.INVALIDPASS)
-                      or buff.startswith(self.AUTHREQ)) \
+                elif (buff.startswith(self.PROXYAUTHREQ) or buff.startswith(self.INVALIDPASS) or buff.startswith(self.AUTHREQ)) \
                         and self.initialcheck:
                     self.log.error(
                         "SIP server replied with an authentication request for an unknown extension. Set --force to force a scan.")
@@ -692,7 +690,7 @@ if __name__ == '__main__':
         printdebug=options.printdebug,
     )
     start_time = datetime.now()
-    #logging.info("scan started at %s" % str(start_time))
+    # logging.info("scan started at %s" % str(start_time))
     logging.info("start your engines")
     try:
         sipvicious.start()

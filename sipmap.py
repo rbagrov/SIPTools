@@ -52,8 +52,8 @@ class DrinkOrSip:
         import dbm.ndbm
         import os.path
         from libs.svhelper import packetcounter
-        #from svfphelper import sipfingerprint
-        #self.sipfingerprint = sipfingerprint
+        # from svfphelper import sipfingerprint
+        # self.sipfingerprint = sipfingerprint
         self.log = logging.getLogger('DrinkOrSip')
         self.bindingip = bindingip
         self.sessionpath = sessionpath
