@@ -1,18 +1,18 @@
 language: python
 python:
-	- 3.4
+    - 3.4
 sudo: required
 cache:
-	apt: true
-	directories:
-		- $HOME/.cache/pip
+    apt: true
+    directories:
+        - $HOME/.cache/pip
 before_install:
-	- sudo apt-get -qq update
+    - sudo apt-get -qq update
 install:
-	- pip install -r requirements-dev.txt
+    - pip install -r requirements-dev.txt
 script:
-	- pycodestyle --show-source --max-line-length=160 --ignore E402 sipcrack.py
-	- pycodestyle --show-source --max-line-length=160 --ignore E402 sipmap.py
-	- pycodestyle --show-source --max-line-length=160 --ignore E402 sipreport.py
-	- pycodestyle --show-source --max-line-length=160 --ignore E402 sipwar.py
-	- pycodestyle --show-source --max-line-length=160 --ignore E402 sipcrash.py
+    - pycodestyle --show-source --max-line-length=160 --ignore E402 sipcrack.py
+    - pycodestyle --show-source --max-line-length=160 --ignore E402 sipmap.py
+    - pycodestyle --show-source --max-line-length=160 --ignore E402 sipreport.py
+    - pycodestyle --show-source --max-line-length=160 --ignore E402 sipwar.py
+    - pycodestyle --show-source --max-line-length=160 --ignore E402 sipcrash.py
