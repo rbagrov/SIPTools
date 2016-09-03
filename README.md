@@ -1,5 +1,8 @@
 # SIP Tools
 
+[![Build Status](https://travis-ci.org/rbagrov/SIPTools.svg?branch=master)](https://travis-ci.org/rbagrov/SIPTools)
+
+
 The 5 tools at you should be looking at are:
 
 - svmap
