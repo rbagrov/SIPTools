@@ -1,4 +1,4 @@
-# Sip Tool Box
+# SIP Tools
 
 The 5 tools at you should be looking at are:
 
